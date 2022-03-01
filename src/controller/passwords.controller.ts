@@ -3,10 +3,13 @@ import { Request, Response } from 'express'
 
 /**
  * Password generator function
+ * This function follows a functional approach to the problem.
+ *
  * @param req
  * @param res
  */
 export function generatePasswords(req: Request, res: Response) {
+    // TODO: modify to handle post and get requests
     const min = req.body.min
     const max = req.body.min + 15
     const specialChars = req.body.specialChars
