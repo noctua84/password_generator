@@ -1,12 +1,32 @@
 {
   "compilerOptions": {
+    /* basics */
     "module": "commonjs",
-    "target": "es5",
+    "target": "es6",
     "sourceMap": true,
     "rootDir": "./src",
     "outDir": "./dist",
+
+    /* module resolution */
     "moduleResolution": "Node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+
+    /* strict options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+
+    /* additional checks */
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+
+    /* experimental options */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "exclude": [
     "node_modules"
