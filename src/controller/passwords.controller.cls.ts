@@ -48,8 +48,6 @@ export class PasswordController {
         let numbers: number = reqBody.numbers
         let passwords: number = reqBody.passwords
 
-        console.log(min, max, symbols, numbers)
-
         let count: number = 0
         let passwordList: Array<string> = []
 

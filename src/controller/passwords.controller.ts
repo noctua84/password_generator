@@ -62,7 +62,7 @@ export function generatePasswords(req: Request, res: Response) {
         count += 1
     }
 
-    return res.json({
+    return res.status(200).json({
         "result": "success",
         "passwords": passwordList
     })
